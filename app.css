@@ -1,0 +1,165 @@
+
+body{
+    background-color: #80947f;
+    background-image: url('backgroundTest.png');
+    width: 1000px;
+}
+
+
+
+h1 {
+    font-family: 'DePixel', sans-serif;
+    font-size:80px;
+    color: black;
+    position: relative;
+    left: 60px;
+}
+
+h2 {
+    font-family: 'DePixel', sans-serif;
+    font-size:30px;
+    color:black;
+    position: relative;
+    left: 130px;
+    top: -80px;
+}
+
+h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 2000;
+    font-size:50px;
+    color:black;
+    text-align: center;
+    position: relative;
+    left: 250px;
+}
+
+
+button {
+    font-family: 'DePixel', sans-serif;
+    border-color: black;
+    background-color: white;
+    block-size: 50px;
+    border-radius: 5px;
+}
+
+
+
+.floating-text{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-size:20px;
+    font-weight: 900;
+    color:#070a07d1;
+    position: relative;
+    left: 220px;
+    top: -80px;
+    transform: translateY(0);
+    animation:fl1 3s infinite linear;
+}
+
+.floating-text::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #000;
+    clip-path: polygon(0,0,100% 50%,0 50%);
+    animation:fl2 3s infinite linear;
+}
+
+@keyframes fl1{
+    30%{
+        transform: translateY(5%) rotate(2deg);
+        opacity: .1;
+    }
+    70%{
+        transform: translateY(5%) rotate(-1deg);
+        opacity: .8;
+    }
+}
+
+
+
+
+.text-center {
+    position: relative;
+    left:260px;
+    bottom:100px;
+  }
+
+  .square_div{
+    width: 1100px;
+    height: 400px;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    left: 200px;
+    border-style:outset;
+
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color:#374137
+  }
+
+  .square_divOutline{
+    width: 300px;
+    height: 250px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    display:inline-flex;
+    border-style:outset;
+    margin: 15px;
+
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color:#374137
+  }
+
+  .square_Skills{
+    width: 1100px;
+    height: 100px;
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 200px;
+    border-style:outset;
+
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color:#374137
+  }
+
+  img {
+    image-rendering: pixelated
+  }
+
+  /*--------------------*/
+    .menu {
+    width: 3000;
+    height: 100;
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+
+    display:inline-flex;
+    gap: 1em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: white;
+    }
+    
+    .menu li:hover {
+    background-color: #80947f;
+    border-radius: 5px;
+    transition: 0.3s ease;
+    }
+    
+    .menu li {
+    padding: 5px 14px;
+    }
+  
