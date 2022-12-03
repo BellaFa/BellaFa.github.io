@@ -6,43 +6,51 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content = "IE=edge">
         <meta name = "viewport" content="width=device-width, initial-scale=1.0">   
-        
         <link href="https://fonts.cdnfonts.com/css/air-black" rel="stylesheet">
     </head>
 
     <body>
-        <!-- NAVIGATION MENUS -->
+        <!-- NAVIGATION MENU -->
 
-        <div class="menu">
+        <header>
+         <div class="container">
+           <h1 class="logo"></h1>
+     
+           <nav>
+             <ul>
+               <li style ="cursor: pointer"><a onclick="ScrollToBottom()">About</a></li>
+             </ul>
+           </nav>
+         </div>
+         
+       </header>
+       
+      <h1>PORTFOLIO </h1>
+      <h2>Check out my work!</h2>
+      <br>
+        
+      
+      <div> 
+           
+         <button><a href="https://github.com/BellaFa" target="_blank" rel="noopener noreferrer">GitHub</a></button>
+         <button><a href="https://www.linkedin.com/in/isabella-faile-b01374225/" target="_blank" rel="noopener noreferrer">LinkedIn</a></button>
+      </div>
 
-            <li><a >Home</a></li>
-            <li><a >About</a></li>
-            <li><a >Contact</a></li>
+         
+     <br>
+      <div class="floating-text" style="width:18%" > &#8678   Left and Right &#x21e8 <br> Arrow Keys to Move</div>
 
-        </div>
-          
-        <h1>PORTFOLIO</h1>
-        <h2>Check out my work!</h2>
-
-        <div class = "text-center"> 
-            <button type ="submit" onClick="window.location.href = 'https://github.com/BellaFa';">GitHub </button>
-            <button type ="submit" onClick="window.location.href = 'https://www.linkedin.com/in/isabella-faile-b01374225/';">LinkedIn</button> 
-
-        </div>
-
-        <div class="floating-text" > &#x21e8 Right and Left &#8678 <br> Arrow Keys to Move</div>
-
-    
-
-        <canvas id="canvas" width="1440" height="360"></canvas>
+      
+      
+        <canvas id="canvas" width="1517" height="360"></canvas>
 
 
         <div style="display:none;">
-            <img id="right" src="websiteSprite.png" width="32" height="32" />
+            <img  id="right" src="images/websiteSprite.png" width="32" height="32" />
         </div>
 
         <div style="display:none;">
-            <img id="left" src="websiteSpriteLeft.png" width="32" height="32" />
+            <img  id="left" src="images/websiteSpriteLeft.png" width="32" height="32" />
         </div>
 
 
@@ -53,13 +61,10 @@
             2D Pixel Game <br> &#8226 Created using Unity and C# <br> &#8226 2D character movement linked to different animations <br> 
              &#8226 Player is able to interact with environment<br>
              <div class="square_divOutline"> 
-                image
+               <img  id="game1" src="images/Game2.jpg" width="400" height="200" />
              </div>
              <div class="square_divOutline"> 
-                image
-             </div>
-             <div class="square_divOutline"> 
-                image
+               <img  id="game1" src="images/Game2.jpg" width="400" height="200" />
              </div>
 
         </div>
@@ -67,39 +72,39 @@
         <h><br></h>
         <div class="square_div"> 
             LED Chessboard Move Evaluator <br> &#8226 Uses stockfish to judge players move, lights up board a certain color representing the moves value <br>
+            &#8226 Arduino used to control lights and store board positions <br>
              <div class="square_divOutline"> 
-                image
+               (need to add)
              </div>
              <div class="square_divOutline"> 
-                image
-             </div>
-             <div class="square_divOutline"> 
-                image
+               (need to add)
              </div>
         </div>
+
         <h><br></h>
         <div class="square_div"> 
            Chrome Extension <br> ... <br>
-           <div class="square_divOutline"> 
-            image
-         </div>
-         <div class="square_divOutline"> 
-            image
-         </div>
-         <div class="square_divOutline"> 
-            image
-         </div>
+            <div class="square_divOutline"> 
+             (need to add)
+            </div>
+            <div class="square_divOutline"> 
+             (need to add)
+            </div>
         </div>
 
         <h3>S K I L L S</h3>
 
         <div class="square_Skills"> 
-        
-           Java Python C# HTML JavaScript CSS
+            <br><br>
+           Java Python C# HTML JavaScript CSS C++
         </div>
 
         <br><br><br>
-        
+
+        <div class="aboutSquare"> 
+         <br><br><br>
+           Third year University Student interested in software development and game design. 
+        </div>
 
     </body>
 
