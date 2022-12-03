@@ -7,9 +7,8 @@ const ctx = canvas.getContext("2d")
 let image = document.getElementById("right");
 
 
-
 let x =0;
-let y =50;
+let y =130;
 let vxl =0;
 let vxr =0;
 let vy = 0;
@@ -22,7 +21,7 @@ function update(){
     x += vxr;
     y+= vy;
     if(x< 0) x= 0;
-    if(x > 1150) x= 1150;
+    if(x > 1300) x= 1300;
 
     if(left == true) image = document.getElementById("left");
 
@@ -33,6 +32,8 @@ function update(){
 
     requestAnimationFrame(update)
 }
-
-
 update();
+
+function ScrollToBottom(){
+    window.scrollTo(0, document.body.scrollHeight);
+}
