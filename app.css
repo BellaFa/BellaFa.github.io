@@ -1,51 +1,120 @@
 
-body{
-    background-color: #80947f;
-    background-image: url('backgroundTest.png');
-    width: 1000px;
+body {
+	margin: 0;
+	background: #80947f;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+    background-image: url('images/backgroundTest.png');
 }
 
-
-
+  /* Navigation Bar */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    header {
+      background: black;
+      height: 70px;
+    }
+    
+    header::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    
+    .logo {
+      float: left;
+      padding: 10px 0;
+    }
+    
+    nav {
+      float: right;
+    }
+    
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    nav li {
+      display: inline-block;
+      margin-left: 70px;
+      padding-top: 23px;
+    
+      position: relative;
+    }
+    
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+    
+nav a:hover {
+    color: grey;
+}
+    
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #80947f;
+    
+  position: absolute;
+  top: 0;
+  width: 0%;
+    
+  transition: all ease-in-out 250ms;
+}
+    
+nav a:hover::before {
+  width: 100%;
+}
+    
+    /* Text Headers*/
 h1 {
     font-family: 'DePixel', sans-serif;
     font-size:80px;
     color: black;
-    position: relative;
-    left: 60px;
+    margin:0;
+    position:relative;
+    left: 5%;
+    width:50%;
+       
 }
-
-h2 {
+h2   {
     font-family: 'DePixel', sans-serif;
-    font-size:30px;
-    color:black;
-    position: relative;
-    left: 130px;
-    top: -80px;
+    font-size:x-large;
+    color: black;
+    margin:0;
+    position:relative;
+    left: 12%;
+    width:30%;
+   
 }
 
-h3 {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
-    font-weight: 2000;
-    font-size:50px;
-    color:black;
-    text-align: center;
-    position: relative;
-    left: 250px;
-}
-
-
+/* buttons */
 button {
     font-family: 'DePixel', sans-serif;
     border-color: black;
     background-color: white;
     block-size: 50px;
     border-radius: 5px;
+    margin: 1;
+    position:relative;
+    left:18%; 
+}
+    
+a{
+    text-decoration: none;
+    color:black;
 }
 
-
-
+/* floating text */
 .floating-text{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
@@ -53,47 +122,38 @@ button {
     font-weight: 900;
     color:#070a07d1;
     position: relative;
-    left: 220px;
-    top: -80px;
+    left: 15.5%;
     transform: translateY(0);
     animation:fl1 3s infinite linear;
 }
 
-.floating-text::before{
-    content: attr(data-text);
-    position: absolute;
-    color: #000;
-    clip-path: polygon(0,0,100% 50%,0 50%);
-    animation:fl2 3s infinite linear;
-}
-
 @keyframes fl1{
     30%{
-        transform: translateY(5%) rotate(2deg);
-        opacity: .1;
+        transform: translateY(7%);
+        opacity: .5;
     }
     70%{
-        transform: translateY(5%) rotate(-1deg);
+        transform: translateY(5%);
         opacity: .8;
     }
 }
-
-
-
-
-.text-center {
-    position: relative;
-    left:260px;
-    bottom:100px;
-  }
-
-  .square_div{
-    width: 1100px;
+/* project Headers */
+h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 2000;
+    font-size:50px;
+    color:black;
+    text-align:center;
+    
+}
+/* sqaures */
+.square_div{
+    width: 70%;
     height: 400px;
     border-radius: 4px;
     background-color: white;
-    position: relative;
-    left: 200px;
+    margin: auto;
     border-style:outset;
 
 
@@ -103,9 +163,9 @@ button {
     color:#374137
   }
 
-  .square_divOutline{
-    width: 300px;
-    height: 250px;
+.square_divOutline{
+    width: 400px;
+    height: 200px;
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     display:inline-flex;
@@ -124,8 +184,7 @@ button {
     height: 100px;
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
-    position: relative;
-    left: 200px;
+    margin: auto;
     border-style:outset;
 
 
@@ -135,31 +194,25 @@ button {
     color:#374137
   }
 
-  img {
-    image-rendering: pixelated
+  .aboutSquare{
+    width: 100%;
+    height: 150px;
+    border-radius: 4px;
+    background-color: white;
+        text-align: center;
+    
   }
 
-  /*--------------------*/
-    .menu {
-    width: 3000;
-    height: 100;
-    border-radius: 4px;
-    background-color: rgb(0, 0, 0);
+  html {
+    scroll-behavior: smooth;
+   }
 
-    display:inline-flex;
-    gap: 1em;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    color: white;
-    }
-    
-    .menu li:hover {
-    background-color: #80947f;
-    border-radius: 5px;
-    transition: 0.3s ease;
-    }
-    
-    .menu li {
-    padding: 5px 14px;
-    }
-  
+#middle{
+    height: 600px;
+    width: 300px;
+}
+  /*
+* {
+        outline: 1px solid red;
+   }
+*/
